@@ -320,7 +320,7 @@ end
 
 
 # for ruby/1.6.
-unless Enumerable.instance_methods.include?('inject')
+unless(Enumerable.instance_methods.include?('inject') || RUBY_VERSION.to_s.start_with?('1.9'))
   module Enumerable
     def inject(init)
       result = init
