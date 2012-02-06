@@ -10,7 +10,9 @@ module XSD
 
 
 module Charset
-  @internal_encoding = $KCODE
+  unless RUBY_VERSION =~ /1.9/
+    @internal_encoding = 'UTF8'
+  end
 
   class XSDError < StandardError; end
   class CharsetError < XSDError; end
@@ -54,7 +56,7 @@ public
           Proc.new { |str| NKF.nkf('-eXm0', str) }
       rescue LoadError
       end
-  
+
       begin
 	require 'uconv'
 	@internal_encoding = 'UTF8'
