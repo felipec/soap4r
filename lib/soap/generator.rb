@@ -176,7 +176,7 @@ public
   def encode_tag(elename, attrs = nil)
     if attrs.nil? or attrs.empty?
       @buf << "\n#{ @indent }<#{ elename }>"
-      return 
+      return
     end
     ary = []
     attrs.each do |key, value|
@@ -270,7 +270,7 @@ private
 
   def get_encode_char_regexp
     ENCODE_CHAR_REGEXP[XSD::Charset.encoding] ||=
-      Regexp.new("[#{EncodeMap.keys.join}]", nil, XSD::Charset.encoding)
+      Regexp.new("[#{EncodeMap.keys.join}]", nil)
   end
 
   def find_handler(encodingstyle)

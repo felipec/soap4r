@@ -65,9 +65,9 @@ class Property
 
   KEY_REGSRC = '([^=:\\\\]*(?:\\\\.[^=:\\\\]*)*)'
   DEF_REGSRC = '\\s*' + KEY_REGSRC + '\\s*[=:]\\s*(.*)'
-  COMMENT_REGEXP = Regexp.new('^(?:#.*|)$', nil, 'u')
-  CATDEF_REGEXP = Regexp.new("^\\[\\s*#{KEY_REGSRC}\\s*\\]$", nil, 'u')
-  LINE_REGEXP = Regexp.new("^#{DEF_REGSRC}$", nil, 'u')
+  COMMENT_REGEXP = Regexp.new('^(?:#.*|)$', nil)
+  CATDEF_REGEXP = Regexp.new("^\\[\\s*#{KEY_REGSRC}\\s*\\]$", nil)
+  LINE_REGEXP = Regexp.new("^#{DEF_REGSRC}$", nil)
   def load(stream)
     key_prefix = ""
     stream.each_with_index do |line, lineno|
