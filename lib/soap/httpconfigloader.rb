@@ -108,6 +108,8 @@ module_function
         cfg.verify_callback = value
       when 'cert_store'
         cfg.cert_store = value
+      when 'ssl_version'
+        cfg.ssl_version = value.to_sym
       else
         raise ArgumentError.new("unknown ssl_config property #{key}")
       end
