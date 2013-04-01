@@ -10,7 +10,7 @@ module XSD
 
 
 module Charset
-  if RUBY_VERSION =~ /1.9/
+  if defined?(RUBY_VERSION) && RUBY_VERSION.to_f >= 1.9
     @internal_encoding = 'UTF8'
   else
     @internal_encoding = $KCODE
