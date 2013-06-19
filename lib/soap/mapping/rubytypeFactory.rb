@@ -5,6 +5,7 @@
 # redistribute it and/or modify it under the same terms of Ruby's license;
 # either the dual license version in 2003, or any later version.
 
+require 'continuation' if RUBY_VERSION.to_f >= 1.9
 
 module SOAP
 module Mapping
