@@ -244,7 +244,7 @@ private
   def trim_indent(str)
     indent = nil
     str = str.lines.collect { |line| untab(line) }.join
-    str.each do |line|
+    str.lines do |line|
       head = line.index(/\S/)
       if !head.nil? and (indent.nil? or head < indent)
         indent = head
