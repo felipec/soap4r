@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'soap/rpc/standaloneServer'
-require 'calc2'
+require File.expand_path('../calc2.rb', __FILE__)
 
 class CalcServer2 < SOAP::RPC::StandaloneServer
   def on_init

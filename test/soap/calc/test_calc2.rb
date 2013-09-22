@@ -1,6 +1,6 @@
 require 'test/unit'
 require 'soap/rpc/driver'
-require 'server2.rb'
+require File.expand_path('../server2.rb', __FILE__)
 
 
 module SOAP

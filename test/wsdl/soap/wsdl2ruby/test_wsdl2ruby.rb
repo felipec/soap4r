@@ -42,7 +42,7 @@ class TestWSDL2Ruby < Test::Unit::TestCase
     compare("expectedMappingRegistry.rb", "echo_versionMappingRegistry.rb")
     compare("expectedDriver.rb", "echo_versionDriver.rb")
     compare("expectedClient.rb", "echo_version_serviceClient.rb")
-
+  ensure
     File.unlink(pathname("echo_versionServant.rb"))
     File.unlink(pathname("echo_version.rb"))
     File.unlink(pathname("echo_version_service.rb"))

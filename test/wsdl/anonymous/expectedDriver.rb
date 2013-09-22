@@ -1,5 +1,5 @@
-require 'lp.rb'
-require 'lpMappingRegistry.rb'
+require File.expand_path('../lp.rb', __FILE__)
+require File.expand_path('../lpMappingRegistry.rb', __FILE__)
 require 'soap/rpc/driver'
 
 module WSDL::Anonymous

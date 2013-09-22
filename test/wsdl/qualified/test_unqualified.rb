@@ -23,7 +23,7 @@ class TestUnqualified < Test::Unit::TestCase
         XSD::QName.new(Namespace, 'loginResponse')
       )
     end
-  
+
     def login(arg)
       nil
     end
@@ -68,7 +68,7 @@ class TestUnqualified < Test::Unit::TestCase
       gen.opt['driver'] = nil
       gen.opt['force'] = true
       gen.run
-      require 'lp.rb'
+      require File.expand_path('../lp.rb', __FILE__)
     ensure
       $".delete('lp.rb')
       Dir.chdir(backupdir)

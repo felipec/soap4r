@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'echo_versionDriver.rb'
+require File.expand_path('../echo_versionDriver.rb', __FILE__)
 
 endpoint_url = ARGV.shift
 obj = Echo_version_port_type.new(endpoint_url)

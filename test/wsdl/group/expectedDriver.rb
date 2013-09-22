@@ -1,5 +1,5 @@
-require 'echo.rb'
-require 'echoMappingRegistry.rb'
+require File.expand_path('../echo.rb', __FILE__)
+require File.expand_path('../echoMappingRegistry.rb', __FILE__)
 require 'soap/rpc/driver'
 
 module WSDL::Group

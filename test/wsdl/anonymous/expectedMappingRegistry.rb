@@ -1,4 +1,4 @@
-require 'lp.rb'
+require File.expand_path('../lp.rb', __FILE__)
 require 'soap/mapping'
 
 module WSDL; module Anonymous
