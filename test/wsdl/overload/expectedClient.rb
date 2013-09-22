@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'defaultDriver.rb'
+require File.expand_path('../defaultDriver.rb', __FILE__)
 
 endpoint_url = ARGV.shift
 obj = OverloadServicePortType.new(endpoint_url)

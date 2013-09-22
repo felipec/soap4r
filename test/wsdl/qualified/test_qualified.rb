@@ -23,7 +23,7 @@ class TestQualified < Test::Unit::TestCase
         XSD::QName.new(Namespace, 'GetPrimeNumbersResponse')
       )
     end
-  
+
     def GetPrimeNumbers(arg)
       nil
     end
@@ -68,7 +68,7 @@ class TestQualified < Test::Unit::TestCase
       gen.opt['driver'] = nil
       gen.opt['force'] = true
       gen.run
-      require 'default.rb'
+      require File.expand_path('../default.rb', __FILE__)
     ensure
       $".delete('default.rb')
       Dir.chdir(backupdir)

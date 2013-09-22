@@ -1,4 +1,4 @@
-require 'amazonEc.rb'
+require File.expand_path('../amazonEc.rb', __FILE__)
 
 require 'soap/rpc/driver'
 

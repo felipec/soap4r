@@ -1,5 +1,5 @@
-require 'RAA.rb'
-require 'RAAMappingRegistry.rb'
+require File.expand_path('../RAA.rb', __FILE__)
+require File.expand_path('../RAAMappingRegistry.rb', __FILE__)
 require 'soap/rpc/driver'
 
 module WSDL::RAA

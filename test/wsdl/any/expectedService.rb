@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
-require 'echoServant.rb'
-require 'echoMappingRegistry.rb'
+require File.expand_path('../echoServant.rb', __FILE__)
+require File.expand_path('../echoMappingRegistry.rb', __FILE__)
 require 'soap/rpc/standaloneServer'
 
 module WSDL; module Any

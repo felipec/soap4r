@@ -1,5 +1,5 @@
-require 'default.rb'
-require 'defaultMappingRegistry.rb'
+require File.expand_path('../default.rb', __FILE__)
+require File.expand_path('../defaultMappingRegistry.rb', __FILE__)
 require 'soap/rpc/driver'
 
 class OverloadServicePortType < ::SOAP::RPC::Driver

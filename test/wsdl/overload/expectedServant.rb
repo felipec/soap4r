@@ -1,4 +1,4 @@
-require 'default.rb'
+require File.expand_path('../default.rb', __FILE__)
 
 class OverloadServicePortType
   # SYNOPSIS

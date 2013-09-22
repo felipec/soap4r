@@ -1,5 +1,5 @@
-require 'product.rb'
-require 'productMappingRegistry.rb'
+require File.expand_path('../product.rb', __FILE__)
+require File.expand_path('../productMappingRegistry.rb', __FILE__)
 require 'soap/rpc/driver'
 
 module WSDL::Ref

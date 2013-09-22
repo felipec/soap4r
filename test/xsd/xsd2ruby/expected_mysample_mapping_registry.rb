@@ -1,5 +1,5 @@
 require 'xsd/mapping'
-require 'mysample.rb'
+require './mysample.rb'
 
 module XSD; module XSD2Ruby
 

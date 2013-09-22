@@ -1,4 +1,4 @@
-require 'echo_version.rb'
+require File.expand_path('../echo_version.rb', __FILE__)
 
 class Echo_version_port_type
   # SYNOPSIS

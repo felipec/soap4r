@@ -34,7 +34,7 @@ class TestRPC < Test::Unit::TestCase
     compare("expectedService.rb", "echo_version_service.rb")
     compare("expectedClient.rb", "echo_version_serviceClient.rb")
     compare("expectedServant.rb", "echo_versionServant.rb")
-
+  ensure
     File.unlink(pathname("echo_version.rb"))
     File.unlink(pathname("echo_versionMappingRegistry.rb"))
     File.unlink(pathname("echo_versionDriver.rb"))
