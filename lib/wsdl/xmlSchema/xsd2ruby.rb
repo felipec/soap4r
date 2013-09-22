@@ -91,7 +91,7 @@ private
     end
     m = XSD::CodeGen::ModuleDef.new(module_name)
     m.def_require("xsd/mapping")
-    m.def_require("#{@classdef_filename}")
+    m.def_require("./#{@classdef_filename}")
     varname = 'Registry'
     m.def_const(varname, '::SOAP::Mapping::LiteralRegistry.new')
     m.def_code(creator.dump(varname))
@@ -109,7 +109,7 @@ private
     end
     mr_name = XSD::CodeGen::GenSupport.safeconstname(@name + 'MappingRegistry')
     c = XSD::CodeGen::ClassDef.new(class_name, 'XSD::Mapping::Mapper')
-    c.def_require("#{@mr_filename}")
+    c.def_require("./#{@mr_filename}")
     c.def_method("initialize") do
       "super(#{mr_name}::Registry)"
     end

@@ -1,5 +1,5 @@
 require 'xsd/mapping'
-require File.expand_path('../mysample.rb', __FILE__)
+require './mysample.rb'
 
 module XSD; module XSD2Ruby
 

@@ -6,7 +6,7 @@ module TestUtil
       silent do
         Dir.chdir(dir) do
           features.each do |feature|
-            Kernel.require feature
+            Kernel.require "./#{feature}"
           end
         end
       end
@@ -36,6 +36,7 @@ module TestUtil
     expected = loadfile(expectedfile)
     actual = loadfile(actualfile)
     if expected != actual
+      puts "File #{actualfile}:\n#{actual}\n\n\nFile #{expectedfile}:\n#{expected}"
       raise "#{File.basename(actualfile)} is different from #{File.basename(expectedfile)}"
     end
   end
