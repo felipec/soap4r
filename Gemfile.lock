@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    soap5r (1.5.8)
+    soap2r (1.5.8)
       httpclient (>= 2.1.1)
 
 GEM
