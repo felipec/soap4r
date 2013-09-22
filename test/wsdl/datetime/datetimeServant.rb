@@ -1,4 +1,4 @@
-require 'datetime.rb'
+require File.expand_path('../datetime.rb', __FILE__)
 
 class DatetimePortType
   # SYNOPSIS

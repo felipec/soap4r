@@ -1,4 +1,4 @@
-require 'echo.rb'
+require File.expand_path('../echo.rb', __FILE__)
 require 'soap/mapping'
 
 module WSDL; module Any

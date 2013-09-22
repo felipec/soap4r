@@ -1,4 +1,4 @@
-require 'RAA.rb'
+require File.expand_path('../RAA.rb', __FILE__)
 require 'soap/mapping'
 
 module WSDL; module RAA

@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
-require 'echo_versionServant.rb'
-require 'echo_versionMappingRegistry.rb'
+require File.expand_path('../echo_versionServant.rb', __FILE__)
+require File.expand_path('../echo_versionMappingRegistry.rb', __FILE__)
 require 'soap/rpc/cgistub'
 
 class Echo_version_port_type

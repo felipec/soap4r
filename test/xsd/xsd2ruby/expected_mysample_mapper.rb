@@ -1,4 +1,4 @@
-require 'mysample_mapping_registry.rb'
+require File.expand_path('../mysample_mapping_registry.rb', __FILE__)
 
 module XSD; module XSD2Ruby
 

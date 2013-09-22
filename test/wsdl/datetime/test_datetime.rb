@@ -1,6 +1,6 @@
 require 'test/unit'
 require 'soap/wsdlDriver'
-require 'DatetimeService.rb'
+require File.expand_path('../DatetimeService.rb', __FILE__)
 
 
 module WSDL

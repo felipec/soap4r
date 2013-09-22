@@ -1,5 +1,5 @@
-require 'echo_version.rb'
-require 'echo_versionMappingRegistry.rb'
+require File.expand_path('../echo_version.rb', __FILE__)
+require File.expand_path('../echo_versionMappingRegistry.rb', __FILE__)
 require 'soap/rpc/driver'
 
 class Echo_version_port_type < ::SOAP::RPC::Driver
