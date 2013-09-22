@@ -8,5 +8,5 @@ Gem::Specification.new do |s|
   s.files = Dir.glob("{bin,lib}/**/*")
   s.executables = [ "wsdl2ruby.rb", "xsd2ruby.rb" ]
   s.add_dependency("httpclient", ">= 2.1.1")
-  s.license = ["RUBY", "GPLv2"]
+  s.licenses = ["RUBY", "GPLv2"]
 end
