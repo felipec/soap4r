@@ -1,4 +1,4 @@
-# Soap5r
+# soap2r
 
 aka soap4r because the original author no longer maintain it.
 
