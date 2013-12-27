@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    soap2r (1.5.8)
+    soap2r (1.5.9)
       httpclient (>= 2.1.1)
 
 GEM
@@ -17,4 +17,4 @@ PLATFORMS
 DEPENDENCIES
   bump
   rake
-  soap5r!
+  soap2r!
