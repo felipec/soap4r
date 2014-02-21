@@ -1,7 +1,7 @@
 $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
 require "soap/version"
 
-Gem::Specification.new "soap2r", Soap::VERSION do |s|
+Gem::Specification.new "soap2r", SOAP::VERSION do |s|
   s.author = "NAKAMURA, Hiroshi"
   s.email = "nahi@ruby-lang.org"
   s.homepage = "https://github.com/felipec/soap4r"
