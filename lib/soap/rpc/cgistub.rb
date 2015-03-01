@@ -10,6 +10,9 @@ require 'soap/streamHandler'
 require 'webrick/httpresponse'
 require 'webrick/httpstatus'
 require 'logger'
+unless defined?(Logger::Application)
+  require 'logger-application'
+end
 require 'soap/rpc/soaplet'
 
 
@@ -113,7 +116,7 @@ class CGIStub < Logger::Application
     @soaplet = ::SOAP::RPC::SOAPlet.new(@router)
     on_init
   end
-  
+
   def on_init
     # do extra initialization in a derived class if needed.
   end
