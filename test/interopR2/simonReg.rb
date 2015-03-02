@@ -4,6 +4,9 @@ proxy = ARGV.shift || nil
 
 require 'soap/driver'
 require 'logger'
+unless defined?(Logger::Application)
+  require 'logger-application'
+end
 
 require 'iSimonReg'
 

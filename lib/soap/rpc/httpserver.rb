@@ -7,6 +7,9 @@
 
 
 require 'logger'
+unless defined?(Logger::Application)
+  require 'logger-application'
+end
 require 'soap/attrproxy'
 require 'soap/rpc/soaplet'
 require 'soap/streamHandler'
@@ -76,7 +79,7 @@ class HTTPServer < Logger::Application
   def add_rpc_servant(obj, namespace = @default_namespace)
     @router.add_rpc_servant(obj, namespace)
   end
-  
+
   def add_request_headerhandler(factory)
     @router.add_request_headerhandler(factory)
   end

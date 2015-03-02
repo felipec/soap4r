@@ -2,6 +2,9 @@
 
 require 'getoptlong'
 require 'logger'
+unless defined?(Logger::Application)
+  require 'logger-application'
+end
 require 'wsdl/soap/wsdl2ruby'
 
 
