@@ -21,6 +21,7 @@ class REXMLParser < XSD::XMLParser::Parser
   def do_parse(string_or_readable)
     source = nil
     source = REXML::SourceFactory.create_from(string_or_readable)
+    source.read if source.respond_to?(:read) #Becaise SourceFactory consumes first 3 chars
     source.encoding = charset if charset
     # Listener passes a String in utf-8.
     @charset = 'utf-8'
