@@ -407,7 +407,7 @@ private
       obj = Mapping.create_empty_object(klass)
     rescue
       # type name "data" tries Data.new which raises TypeError
-      nil
+      return nil
     end
     mark_unmarshalled_obj(node, obj)
     setiv2obj(obj, node, map)
